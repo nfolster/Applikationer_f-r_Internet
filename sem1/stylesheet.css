@@ -1,0 +1,291 @@
+body{
+    font-family:Verdana, Geneva, sans-serif;
+}
+/* -----------MENU----------- */
+nav.menu ul {
+    font-family:Verdana, Geneva, sans-serif;
+    font-size: 25px; 
+    margin-left: 0;
+    margin-top: 0;
+    text-align: center;
+    position: fixed;
+    background-color: rgb(88, 196, 140);
+    overflow: hidden;
+    width: 100%;
+}
+nav.menu li{
+    display: inline-block;
+}
+nav.menu li a{
+    margin-top: 0;
+    padding-top: 7px;
+    padding-bottom: 5px;
+    padding-left: 2px;
+    padding-right: 10px;
+    display: block;
+    color: white;
+    text-decoration: none;
+}
+nav.menu li a:hover{
+    /*background-color: rgb(128, 236, 180);*/
+    background-color: rgb(68, 176, 120);
+}
+nav.menu li a#active{
+    color: rgb(88, 196, 140);
+    background-color: white;
+}
+nav.menu img{
+    width: 25px;
+    padding-right:5px;
+    padding-left: 10px;
+}
+nav.menu p {
+    float:right;
+}
+@media screen and (max-width: 700px) {
+    nav.menu li{
+        font-size: 15px;
+    }
+
+nav.menu img{
+        width: 15px;
+    }
+}
+@media screen and (max-width: 400px) {
+    nav.menu li p{
+        display: none;
+    }
+    nav.menu li a{
+        padding-right: 2px;
+
+    }
+    nav.menu img{
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+}
+/* ------------MENU------------ */
+
+/* -----------HOME----------- */
+h1.home{
+    font-family:Verdana, Geneva, sans-serif;
+    color: rgb(48, 156, 100);
+    font-size: 35px;
+    margin-left: 5px;
+}
+p.home{
+    font-family:Verdana, Geneva, sans-serif;
+    color: rgb(28, 136, 80);
+    margin-left: 5px;
+    font-size: 15px;
+}
+@media screen and (max-width: 700px) {
+    h1.home{
+        font-size: 25px
+    }
+    p.home{
+        font-size: 15px;
+    }
+}
+/* ------------HOME------------ */
+
+/* ------------RECIPES------------ */
+/*----RecipeMenu-----*/
+nav.recipemenu{
+    background-color: rgb(88, 196, 140);
+    height: 100%;
+}
+nav.recipemenu ul{
+    font-family:Verdana, Geneva, sans-serif;
+    font-size: 14px; 
+    margin-left: 10px;
+    margin-top: 0px;
+    margin-right: 25px;
+    text-align: center;
+    background-color: rgb(88, 196, 140);
+    height: 600px;
+    width: 100px;
+    float: left;
+    overflow: hidden;
+    border: 1px solid rgb(88, 196, 140);
+    border-radius: 5px;
+}
+::-webkit-scrollbar {
+    width: 10px;
+}
+nav.recipemenu li{
+    border-bottom: 1px solid white;
+}
+nav.recipemenu li a{
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+}
+nav.recipemenu li a:hover{
+    background-color: rgb(68, 176, 120);
+}
+nav.recipemenu li a.active{
+background-color: white;
+color: rgb(88, 196, 140);
+}
+/*----RecipeMenu-----*/
+.recipe{
+    font-family: Verdana, Geneva, sans-serif;
+    color: rgb(48, 156, 100);
+    font-size: 15px;
+}
+img.recipe{
+    float: right; 
+    width: 48vw;
+    height: 30vw;
+}
+.recipe li{
+    margin-left: 20px;
+    display: list-item;
+}
+.recipe ul{
+    list-style-type: disc;
+}
+.recipe ol{
+    list-style-type: decimal;
+}
+.recipe li span { position: relative; left: -5px; }
+
+.recipe h1{
+    font-size: 35px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+.recipe h2{
+    font-weight: bold;
+    font-size: 20px;
+}
+.recipe h3{
+    font-weight: bold;
+    font-size: 15px;
+}
+div.comments{
+    background-color: white;
+    display: inline-block;
+}
+.comments h3{
+    padding: 4px;
+    text-align: center;
+    color: rgb(48, 156, 100);
+    border: 4px solid rgb(88, 196, 140);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+ul.comments {
+    border: 1px solid rgb(88, 196, 140);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    list-style-type: none;
+    float: left;
+}
+.comments li{
+    font-size: 14px;
+    padding: 4px;
+    margin: 4px;
+    margin-top: 10px;
+    color: rgb(48, 156, 100);
+    background-color: white;
+    border: 2px solid rgb(88, 196, 140);
+    border-radius: 10px;
+}
+@media screen and (max-width: 700px) {
+    .recipe{
+        font-size: 12px;
+    }
+    .recipe h1{
+        font-size: 20px;
+    }
+    .recipe h2{
+        font-size: 15px;
+    }
+    .recipe h3{
+        font-size: 15px;
+    }
+    img.recipe{
+        float: none;
+    }
+    .comments li{
+        font-size: 10px;
+    }
+    nav.recipemenu ul{
+        font-size: 10px;
+    }
+}
+
+/* ------------RECIPES------------ */
+
+/* ------------CALENDAR------------ */
+.calendar{
+    margin: 10px;
+    margin-top: 6px;
+    margin-bottom: 0;
+}
+.calendar table{
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+.calendar th{
+    text-align: center;
+    background-color: rgb(88, 196, 140);
+    color: white;
+    border-right: 1px solid white;
+    padding: 5px;
+}
+@media screen and (max-width: 700px) {
+    .calendar th{
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 400px) {
+.calendar th{
+    font-size: 9px;
+    }   
+}
+.calendar th.right{
+    border-right: 1px solid rgb(88, 196, 140);
+}
+.calendar td{
+    text-align: right;
+    border: 1px solid rgb(88, 196, 140);
+    padding: 4px;
+    padding-bottom: 7.5vw;
+    color: rgb(48, 156, 100);
+    font-size: 12px;
+}
+.calendar .linked{
+    padding: 0;
+    padding-bottom: 0;
+    background-size: 100%, 100%;
+    background-repeat: no-repeat;
+}
+.calendar .linked p{
+    padding-top: 4px;
+    padding-right: 4px;
+}
+.calendar a{
+    padding-bottom: 7.5vw;
+    display: block;
+    text-decoration: none;
+    color: rgb(48, 156, 100);
+}
+.pancake{
+    background-image: url("resources/pancakes.jpg");
+}
+.meatballs{
+    background-image: url("resources/meatballs.jpg");
+}
+.calendar a:hover{
+    background-color: rgba(88, 196, 137, 0.192)
+}
+.calendar td.active{
+    border-top: 1px solid white;
+    background-color: rgb(88, 196, 140);
+    color: white;
+}
+/* ------------CALENDAR------------ */
