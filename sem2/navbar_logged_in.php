@@ -1,0 +1,2 @@
+<li class="user"><img  alt="User" src="resources/user.png"><p><?php echo $_SESSION['login_user']; ?></p></li><li>
+    <a href="destroy.php"><img  alt="Sign Up" src="resources/logout.png"><p>Log out</p></a></li>

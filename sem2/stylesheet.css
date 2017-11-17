@@ -1,0 +1,415 @@
+body{
+    background-image: url("resources/background.jpg");
+    font-family:Verdana, Geneva, sans-serif;
+    color: black;
+}
+
+/* -----------MENU----------- */
+nav.menu ul {
+    font-family:Verdana, Geneva, sans-serif;
+    font-size: 25px; 
+    margin-left: 0;
+    margin-top: 0;
+    text-align: center;
+    position: fixed;
+    overflow: hidden;
+    width: 100%;
+}
+nav.menu li{
+    display: inline-block;
+    background-color: rgba(88, 196, 140, .663);
+}
+nav.menu li.user{
+    float:right;
+    margin-left: -100%;
+    font-family: monospace;
+    margin-top: 0;
+    padding-top: 7px;
+    padding-bottom: 4px;
+    padding-left: 2px;
+    padding-right: 10px;
+    color: white;
+    background-color: rgba(38, 146, 90, 0.612);
+    text-decoration: none;
+}
+nav.menu li a{
+
+    margin-top: 0;
+    padding-top: 7px;
+    padding-bottom: 5px;
+    padding-left: 2px;
+    padding-right: 10px;
+    display: block;
+    color: white;
+    text-decoration: none;
+}
+
+nav.menu li:hover{
+    /*background-color: rgb(128, 236, 180);*/
+    background-color: rgba(68, 176, 120, .663);
+}
+nav.menu li.user:hover{
+    /*background-color: rgb(128, 236, 180);*/
+    background-color: rgba(38, 146, 90, 0.612);
+}
+nav.menu li.active{
+    color: white;
+    background-color: rgba(88, 196, 140, .4);
+}
+nav.menu img{
+    width: 25px;
+    padding-right:5px;
+    padding-left: 10px;
+}
+nav.menu li p {
+    float:right;
+}
+@media screen and (max-width: 900px) {
+    nav.menu li{
+        font-size: 15px;
+    }
+
+nav.menu img{
+        width: 15px;
+    }
+}
+@media screen and (max-width: 600px) {
+    nav.menu li p{
+        display: none;
+    }
+    nav.menu li.user p{
+        display: inline-block;
+    }
+    nav.menu li a{
+        padding-right: 2px;
+
+    }
+    nav.menu img{
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+}
+/* ------------MENU------------ */
+
+/* -----------HOME----------- */
+div.home{
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.877);
+    border: 2px solid rgb(88, 196, 140);
+    border-radius: 10px;
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    margin-top: 20px;
+}
+.home h1{
+    color: rgb(88, 176, 120);
+    text-align: center;
+    font-size: 35px;
+}
+p.home{
+    font-size: 15px;
+}
+@media screen and (max-width: 700px) {
+    .home h1{
+        font-size: 20px
+    }
+    p.home{
+        font-size: 15px;
+    }
+}
+/* ------------HOME------------ */
+
+/* ------------RECIPES------------ */
+/*----RecipeMenu-----*/
+
+nav.recipemenu ul{
+    font-family:Verdana, Geneva, sans-serif;
+    font-size: 14px; 
+    margin-left: 10px;
+    margin-top: 0px;
+    margin-right: 25px;
+    text-align: center;
+    background-color: rgba(88, 196, 140, .663);
+    height: 600px;
+    width: 100px;
+    float: left;
+    overflow: hidden;
+    border: 1px solid rgba(88, 196, 140, .663);
+    border-radius: 5px;
+}
+::-webkit-scrollbar {
+    width: 10px;
+}
+nav.recipemenu li{
+    border-bottom: 1px solid rgba(255, 255, 255, .663);
+}
+nav.recipemenu li a{
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+}
+nav.recipemenu li a:hover{
+    background-color: rgba(68, 176, 118, .463);
+}
+nav.recipemenu li a.active{
+background-color: rgba(255, 255, 255, .863);
+color: rgb(88, 196, 140);
+}
+/*----RecipeMenu-----*/
+.recipe{
+    font-family: Verdana, Geneva, sans-serif;
+    color: rgb(48, 156, 100);
+    font-size: 15px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.877);
+    border: 2px solid rgb(88, 196, 140);
+    border-radius: 10px;
+    margin-left: 125px;
+    margin-right: 15px;
+}
+.recipe img{
+    float: right; 
+    width: 48vw;
+    height: 30vw;
+}
+.recipe li{
+    margin-left: 20px;
+    display: list-item;
+    color: black;
+}
+.recipe ul{
+    list-style-type: disc;
+}
+.recipe ol{
+    list-style-type: decimal;
+}
+.recipe li span { position: relative; left: -5px; }
+
+.recipe h1{
+    font-size: 35px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+.recipe h2{
+    font-weight: bold;
+    font-size: 20px;
+}
+.recipe h3{
+    font-weight: bold;
+    font-size: 15px;
+}
+div.comment{
+    background-color: rgba(255, 255, 255, 0.586);
+    display: inline-block;
+}
+.comment h3{
+    padding: 4px;
+    text-align: center;
+    color: rgb(48, 156, 100);
+    border: 4px solid rgb(88, 196, 140);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+ul.comment {
+    border: 1px solid rgb(88, 196, 140);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    list-style-type: none;
+    float: left;
+}
+.comment li{
+    font-size: 14px;
+    padding: 4px;
+    margin: 4px;
+    margin-top: 10px;
+    background-color: white;
+    border: 2px solid rgb(88, 196, 140);
+    border-radius: 10px;
+}
+.comment li p{
+    color: rgb(68, 176, 120);
+    text-align: center;
+}
+
+@media screen and (max-width: 700px) {
+    .recipe{
+        font-size: 12px;
+    }
+    .recipe h1{
+        font-size: 20px;
+        text-align: center;
+    }
+    .recipe h2{
+        font-size: 15px;
+        text-align: center;
+    }
+    .recipe h3{
+        font-size: 15px;
+        text-align: center;
+    }
+    .recipe img{
+        float: none;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .comment li{
+        font-size: 10px;
+    }
+    nav.recipemenu ul{
+        font-size: 10px;
+    }
+}
+
+/* ------------RECIPES------------ */
+
+/* ------------CALENDAR------------ */
+.calendar{
+    margin: 20px;
+}
+.calendar table{
+    table-layout: fixed;
+    border-collapse: collapse;
+    width: 100%;
+    border-radius: 5px;
+}
+.calendar th{
+    text-align: center;
+    background-color: rgb(88, 196, 140);
+    color: white;
+    border-right: 1px solid rgba(255, 255, 255, .863);
+    padding: 5px;
+}
+@media screen and (max-width: 700px) {
+    .calendar th{
+        font-size: 10px;
+    }
+}
+@media screen and (max-width: 400px) {
+.calendar th{
+    font-size: 9px;
+    }   
+}
+.calendar th.right{
+    border-right: 1px solid rgb(88, 196, 140);
+}
+.calendar td{
+    text-align: right;
+    border: 1px solid rgb(88, 196, 140);
+    padding: 4px;
+    padding-bottom: 7.5vw;
+    background-color: rgba(255, 255, 255, .863);
+    color: rgb(48, 156, 100);
+    font-size: 12px;
+}
+.calendar .linked{
+    padding: 0;
+    padding-bottom: 0;
+    background-size: 100%, 100%;
+    background-repeat: no-repeat;
+}
+.calendar .linked p{
+    padding-top: 4px;
+    padding-right: 4px;
+}
+.calendar a{
+    padding-bottom: 7.5vw;
+    display: block;
+    text-decoration: none;
+    color: rgb(48, 156, 100);
+}
+.pancake{
+    background-image: url("resources/pancakes.jpg");
+}
+.meatballs{
+    background-image: url("resources/meatballs.jpg");
+}
+.calendar a:hover{
+    background-color: rgba(88, 196, 137, 0.192);
+}
+.calendar td.active{
+    border-top: 1px solid white;
+    background-color: rgba(88, 196, 140, 0.863);
+    color: white;
+}
+/* ------------CALENDAR------------ */
+
+/* ------------LOGIN------------ */
+.login label{
+    color: rgb(68, 156, 100);
+}
+.login input[type=text],input[type=password] {
+    width:50%;
+    padding:5px;
+    margin-top:8px;
+    border:1px solid rgb(88, 196, 140);
+    padding-left:5px;
+    font-size:16px;
+    margin-bottom: 10px;
+}
+.login input[type=submit]{
+    width:60%;
+    background-color:rgba(88, 196, 140, 0.877);
+    color:#fff;
+    border:none;
+    padding:10px;
+    font-size:20px;
+    cursor:pointer;
+    border-radius:5px;
+    margin-top: 10px;
+    margin-bottom:15px
+}
+.login span{
+    color: red;
+}
+.login input[type=submit]:hover{
+    background-color:rgba(68, 176, 120, 0.877);
+}
+div.comment{
+    max-width: 50%;
+}
+@media screen and (max-width: 900px) {
+    div.comment{
+        width: 100%;
+    }
+}
+.comment li{
+    overflow:hidden;
+    word-break:break-all;
+}
+.login.comment {
+    width: 100%;
+    margin-left: 10px;
+}
+.comment.login input[type=submit]{
+    margin-top: 10px;
+    width: 80%;
+}
+.comment.login textarea{
+    resize: none;
+    margin-top: 5px;
+    width: 70%;
+}
+.delete {
+    float: right;
+    padding: 2px;
+    margin-left: 5px;
+    margin-bottom: 2px;
+    background-color:rgba(88, 196, 140, 0.877);
+    color:#fff;
+    border:none;
+    font-size:14px;
+    cursor:pointer;
+    border-radius:5px;
+}
+.delete input{
+    width: 13px;
+    padding: 0;
+    margin: 0;
+}
+.delete:hover{
+    background-color:rgba(68, 176, 120, 0.877);
+}
+/* ------------LOGIN------------ */
