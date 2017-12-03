@@ -35,7 +35,7 @@ if(isset($_SESSION['login_user']))
                 <li><a href="meatballs.php">Meatballs</a></li>
                 <li><a class="active" href="pancakes.php">Pancakes</a></li>
                 <li><a>Spagetti</a></li>
-                <li><a>Icecream</a></li>
+                <li><a href="http://www.icecream.com/">Icecream</a></li>
                 <li><a>Toast</a></li>
             </ul>
         </nav>

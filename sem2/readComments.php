@@ -1,7 +1,6 @@
 <?php
 session_start();
 
-// Connecta till databasen
 $db = new PDO("mysql:host=localhost;dbname=TastyRecipes", "root", "root");
 
 $page = $_SESSION['page'];

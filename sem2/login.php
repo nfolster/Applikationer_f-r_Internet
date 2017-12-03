@@ -9,12 +9,11 @@ if (isset($_POST['submit']))
     }
     else
     {
-        // Definera username och password
         $username=$_POST['username'];
         $password=$_POST['password'];
         // Connecta till databasen
         $connection = mysql_connect("localhost", "root", "root");
-        
+
         // Välj databas
         $db = mysql_select_db("TastyRecipes", $connection);
         //hämta info

@@ -6,7 +6,6 @@ body{
 
 /* -----------MENU----------- */
 nav.menu ul {
-    font-family:Verdana, Geneva, sans-serif;
     font-size: 25px; 
     margin-left: 0;
     margin-top: 0;
@@ -124,7 +123,6 @@ p.home{
 /*----RecipeMenu-----*/
 
 nav.recipemenu ul{
-    font-family:Verdana, Geneva, sans-serif;
     font-size: 14px; 
     margin-left: 10px;
     margin-top: 0px;
@@ -159,7 +157,6 @@ color: rgb(88, 196, 140);
 }
 /*----RecipeMenu-----*/
 .recipe{
-    font-family: Verdana, Geneva, sans-serif;
     color: rgb(48, 156, 100);
     font-size: 15px;
     padding: 10px;

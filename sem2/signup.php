@@ -10,7 +10,6 @@ if (isset($_POST['submit']))
         $error = "Different passwords entered";
     }else
     {
-        // Definera username och password
         $username=$_POST['username'];
         $password=$_POST['password'];
         // Connecta till databasen
