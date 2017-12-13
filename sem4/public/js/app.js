@@ -1,0 +1,1 @@
+json(string|array $data = array(), int $status = 200, array $headers = array(), int $options)

@@ -1,5 +1,4 @@
 <?php
-
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -21,7 +20,7 @@ Route::get('pancakes', function () {
     return view('pancakes', compact('recipe', 'comments'));
 });
 Route::get('calendar', function () {
-    return view('calendar', compact('date'));
+    return view('calendar');
 });
 Route::get('signupsucess', function () {
 	if (Auth::check()) {
@@ -36,15 +35,20 @@ Route::get('/', function () {
 Route::get('home', function () {
 		return view('home');
 });
+Route::get('test', function () {
+		return view('test');
+});
 Route::get('logout', function () {
 		Auth::logout();
 		return view('home');
 });
+
 if (Request::secure()) {
-	Route::post('/delete/{id}', 'CommentController@delete')->name('delete');
+	Route::post('delete', 'CommentController@delete')->name('delete');
 	Route::post('write', 'CommentController@write');
 	Auth::routes();
 }
+
 
 
 
